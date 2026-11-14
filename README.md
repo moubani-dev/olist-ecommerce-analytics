@@ -31,6 +31,55 @@ SQL, visualization, and customer segmentation.
 - Scikit-learn
 - Git and GitHub
 
+
+## Data Loading
+
+The project uses a reusable Python-based DataLoader
+to load the original Olist datasets into Pandas DataFrames.
+
+### Implementation
+
+The DataLoader is implemented in:
+
+`src/data_loader.py`
+
+It provides the following functionality:
+
+- Automatic detection of the raw data directory.
+- Validation of required CSV files.
+- Loading individual datasets by name.
+- Loading multiple datasets into a dictionary.
+- Optional loading of the large geolocation dataset.
+
+### Usage
+
+```python
+from src.data_loader import OlistDataLoader
+
+# Initialize the DataLoader
+loader = OlistDataLoader()
+
+# Load the eight standard datasets
+datasets = loader.load_all()
+
+# Load geolocation separately when required
+geolocation = loader.load_dataset("geolocation")
+```
+
+### Dataset Summary
+
+| Dataset | Records |
+|---|---:|
+| Customers | 99,441 |
+| Orders | 99,441 |
+| Order Items | 112,650 |
+| Payments | 103,886 |
+| Reviews | 99,224 |
+| Products | 32,951 |
+| Sellers | 3,095 |
+| Category Translation | 71 |
+| Geolocation | 1,000,163 |
+
 ## Project Structure
 
 ```text
@@ -50,10 +99,18 @@ olist-ecommerce-analytics/
 
 ## Project Status
 
-Currently in the initial setup and data preparation phase.
+**Completed:**
+- Project structure and environment setup.
+- Olist dataset acquisition and organization.
+- Reusable DataLoader implementation.
+- Validation and loading tests for all nine datasets.
 
-More analysis, visualizations, and business insights
-will be added as the project progresses.
+**In Progress:**
+- Data understanding and quality assessment.
+- SQL analysis and data cleaning.
+- Exploratory data analysis.
+- Customer segmentation and dashboard development.
+
 
 ## Author
 
