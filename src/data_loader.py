@@ -6,8 +6,7 @@ import pandas as pd
 
 class OlistDataLoader:
     """
-    Loads the original Olist e-commerce datasets
-    from the project's raw data directory.
+    Loads, stores, and reports the original Olist datasets.
     """
 
     DATASETS = {
@@ -28,6 +27,8 @@ class OlistDataLoader:
             self.data_dir = project_root / "data" / "raw"
         else:
             self.data_dir = Path(data_dir)
+
+        self.datasets = {}
 
     def validate_files(self):
         """Check whether all expected CSV files exist."""
@@ -64,7 +65,7 @@ class OlistDataLoader:
         return pd.read_csv(file_path)
 
     def load_all(self, include_geolocation=False):
-        """Load all datasets into a dictionary of DataFrames."""
+        """Load selected datasets into a dictionary."""
 
         self.validate_files()
 
@@ -77,3 +78,34 @@ class OlistDataLoader:
             datasets[name] = self.load_dataset(name)
 
         return datasets
+
+    def load_data(self, include_geolocation=True):
+        """Load datasets and store them inside the loader."""
+
+        self.datasets = self.load_all(
+            include_geolocation=include_geolocation
+        )
+
+        return self.datasets
+
+    def report(self):
+        """Display a summary report of loaded datasets."""
+
+        if not self.datasets:
+            raise RuntimeError(
+                "No datasets loaded. Call load_data() first."
+            )
+
+        print("\nOLIST DATASET REPORT")
+        print("=" * 65)
+
+        for name, df in self.datasets.items():
+            print(f"\nDataset: {name}")
+            print(f"Rows: {len(df):,}")
+            print(f"Columns: {len(df.columns)}")
+            print(f"Duplicate rows: {df.duplicated().sum():,}")
+            print(f"Missing values: {df.isna().sum().sum():,}")
+            print("-" * 40)
+
+        print(f"\nTotal datasets loaded: {len(self.datasets)}")
+        print("=" * 65)
