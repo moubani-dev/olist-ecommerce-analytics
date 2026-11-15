@@ -1,10 +1,10 @@
-<h1 align="center">🛒 OLIST E-COMMERCE ANALYTICS</h1>
+<div align="center">
 
-<h3 align="center">End-to-End Data Analytics & Business Intelligence</h3>
+OLIST E-COMMERCE ANALYTICS
 
-<p align="center">
-  <strong>Transforming Brazilian E-Commerce Data into Actionable Business Insights</strong>
-</p>
+End-to-End Data Analytics & Business Intelligence
+
+Transforming Brazilian E-Commerce Data into Actionable Business Insights
 
 <br/>
 
