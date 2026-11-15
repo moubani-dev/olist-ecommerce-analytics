@@ -165,9 +165,11 @@ Applied RFM (Recency, Frequency, Monetary) analysis to understand customer value
 
 The segments provide a foundation for differentiated customer engagement and retention strategies.
 
-### Phase 6 — Interactive Executive Dashboard
+### Dashboard Preview
 
-Developed a dark-themed executive analytics dashboard using Plotly.
+![Olist Executive Dashboard](images/executive_dashboard.png)
+
+*Interactive executive dashboard built using Plotly.*
 
 **Key Performance Indicators**
 
