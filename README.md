@@ -435,7 +435,14 @@ This project provided practical experience in:
 Aspiring Data Analyst | Python | SQL | Business Intelligence
 
 - **GitHub:** [moubani-dev](https://github.com/moubani-dev)
+- **LinkedIn:** [Connect with me](https://www.linkedin.com/in/developer-moubani/)
 - **Project Repository:** [Olist E-Commerce Analytics](https://github.com/moubani-dev/olist-ecommerce-analytics)
+
+---
+
+<p align="center">
+  **Let's connect and explore the world of data!**
+</p>
 
 ---
 
