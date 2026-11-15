@@ -1,124 +1,130 @@
-# Olist E-Commerce Analytics
-### End-to-End Data Analytics | SQL | Python | Customer Segmentation | Business Intelligence
+ <div align="center">
 
-<p align="center">
-  <strong>Transforming Raw E-Commerce Data into Actionable Business Intelligence</strong>
-</p>
+# OLIST E-COMMERCE ANALYTICS
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Python-Data%20Analysis-3776AB?logo=python&logoColor=white" />
-  <img src="https://img.shields.io/badge/SQL-SQLite-003B57?logo=sqlite&logoColor=white" />
-  <img src="https://img.shields.io/badge/Pandas-Data%20Processing-150458?logo=pandas&logoColor=white" />
-  <img src="https://img.shields.io/badge/Plotly-Interactive%20Analytics-3F4F75?logo=plotly&logoColor=white" />
-  <img src="https://img.shields.io/badge/Scikit--learn-Machine%20Learning-F7931E?logo=scikitlearn&logoColor=white" />
-  <img src="https://img.shields.io/badge/Status-Completed-success" />
-</p>
+### End-to-End Data Analytics & Business Intelligence
+
+**Transforming Brazilian E-Commerce Data into Actionable Business Insights**
+
+<br/>
+
+<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+<img src="https://img.shields.io/badge/SQL-003B57?style=for-the-badge&logo=sqlite&logoColor=white" />
+<img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" />
+<img src="https://img.shields.io/badge/Plotly-3F4F75?style=for-the-badge&logo=plotly&logoColor=white" />
+<img src="https://img.shields.io/badge/Scikit--learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white" />
+
+<br/>
+
+<img src="https://img.shields.io/badge/Project-Completed-success?style=flat-square" />
+<img src="https://img.shields.io/badge/Domain-E--Commerce-blue?style=flat-square" />
+<img src="https://img.shields.io/badge/Focus-Business%20Analytics-purple?style=flat-square" />
+
+</div>
 
 ---
 
-## 01 | Project Overview
+## 📌 01. Executive Summary
 
-How can an e-commerce business use transactional data to understand its performance, improve customer experience, and make better strategic decisions?
+E-commerce businesses generate substantial amounts of transactional data. However, transforming this data into meaningful business intelligence requires structured analysis, statistical interpretation, and effective visualization.
 
-This project explores the **Brazilian E-Commerce Public Dataset by Olist**, a real-world marketplace dataset containing information about customers, orders, products, payments, sellers, reviews, and delivery operations.
+This project presents an end-to-end analysis of the **Brazilian E-Commerce Public Dataset by Olist**, exploring marketplace performance across sales, customers, products, payments, sellers, delivery operations, and customer satisfaction.
 
-The objective is to transform raw transactional data into meaningful business insights through a structured analytical workflow involving Python, SQL, exploratory data analysis, customer segmentation, and interactive business intelligence.
+Using Python, SQL, exploratory data analysis, machine learning, and interactive visualization, the project transforms raw transactional data into actionable business insights.
 
-The project culminates in an executive dashboard designed to provide a consolidated view of marketplace performance and support data-driven decision-making.
+The final deliverable is an interactive executive dashboard supported by analytical findings and strategic business recommendations.
 
-**Project focus:** Revenue Performance | Customer Behavior | Product Analytics | Delivery Operations | Customer Segmentation | Business Intelligence
+**Project Scope**
 
-## 02 | Business Objectives
+- Revenue and Sales Performance Analysis
+- Customer Purchasing Behaviour
+- Product and Seller Performance
+- Payment Behaviour Analysis
+- Delivery Performance and Customer Satisfaction
+- RFM-Based Customer Segmentation
+- Interactive Business Intelligence Dashboard
 
-The analysis investigates the following business questions:
+## 🎯 02. Business Objectives
 
-- How does marketplace revenue change over time?
-- Which product categories contribute the most to total revenue?
-- Which Brazilian states generate the highest sales?
-- Which sellers contribute most to marketplace revenue?
-- When are customers most active in placing orders?
-- Which payment methods are most frequently used?
-- How does delivery performance influence customer satisfaction?
-- Can customers be grouped into meaningful segments using RFM analysis?
-- What business actions can improve retention, sales, and operational performance?
+The project aims to answer key business questions:
 
-## 03 | Dataset
+1. How does marketplace revenue change over time?
+2. Which product categories generate the highest revenue?
+3. Which Brazilian states contribute the most to sales?
+4. Which sellers are the strongest revenue contributors?
+5. When are customers most active in placing orders?
+6. Which payment methods dominate customer transactions?
+7. How does delivery performance affect customer satisfaction?
+8. Can customers be grouped into meaningful segments using RFM analysis?
+9. What business strategies can improve customer retention and operational performance?
+
+## 📂 03. Dataset Overview
 
 **Dataset:** Brazilian E-Commerce Public Dataset by Olist
 
-**Source:** [Olist Brazilian E-Commerce Dataset — Kaggle](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)
+**Source:** [Kaggle – Olist Brazilian E-Commerce Dataset](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)
 
-The project uses nine relational datasets containing approximately 1.6 million records across the original CSV files.
+The analysis uses nine interconnected datasets containing approximately 1.6 million source records.
 
 | Dataset | Records | Description |
 |---|---:|---|
 | Customers | 99,441 | Customer information and locations |
 | Orders | 99,441 | Order status and timestamps |
-| Order Items | 112,650 | Products purchased in each order |
+| Order Items | 112,650 | Products purchased per order |
 | Payments | 103,886 | Payment methods and installments |
 | Reviews | 99,224 | Customer ratings and reviews |
 | Products | 32,951 | Product attributes and categories |
-| Sellers | 3,095 | Seller information and locations |
-| Category Translation | 71 | Portuguese-to-English category mapping |
-| Geolocation | 1,000,163 | Brazilian geographic coordinates |
+| Sellers | 3,095 | Seller information |
+| Category Translation | 71 | Product category translations |
+| Geolocation | 1,000,163 | Geographic coordinates |
 
-*Record counts represent the original source datasets, not the number of unique marketplace customers or orders.*
+*Record counts represent the original source datasets, not unique customers or orders. Raw CSV files are not included in this repository.*
 
-Raw CSV files are excluded from this repository. Users must download the dataset separately.
+## 🛠️ 04. Technology Stack
 
-## 04 | Technology Stack
-
-| Technology | Application |
+| Category | Technologies |
 |---|---|
-| Python | Analytical programming |
-| Pandas | Data manipulation and analysis |
-| NumPy | Numerical computation |
-| SQLite | Relational database management |
-| SQL | Business data querying |
-| Matplotlib | Data visualization |
-| Seaborn | Statistical visualization |
-| Plotly | Interactive dashboards |
-| Scikit-learn | Feature scaling and K-Means clustering |
-| Google Colab | Notebook execution |
-| VS Code | Development environment |
-| Git & GitHub | Version control and project management |
+| Programming | Python |
+| Data Manipulation | Pandas, NumPy |
+| Database | SQLite |
+| Query Language | SQL |
+| Data Visualization | Matplotlib, Seaborn, Plotly |
+| Machine Learning | Scikit-learn |
+| Development Environment | Google Colab, VS Code |
+| Version Control | Git, GitHub |
 
-## 05 | Analytical Methodology
+## 🔬 05. Analytical Methodology
 
-The project follows a structured end-to-end data analytics workflow.
+The project follows a structured seven-phase analytical workflow.
 
-### Phase 1 — Data Loading and Understanding
+### Phase 01 — Data Loading & Understanding
 
-Developed a reusable, object-oriented Python DataLoader to manage the Olist datasets.
+Developed a reusable object-oriented Python DataLoader to manage the nine datasets.
 
-Key activities:
-
-- Loaded and validated nine CSV datasets.
-- Implemented automatic dataset directory detection.
-- Checked required file availability.
-- Inspected dataset dimensions and column data types.
+**Key activities:**
+- Loaded and validated all nine CSV datasets.
+- Implemented dataset file validation.
+- Inspected dimensions and data types.
 - Examined missing values and data structure.
-- Organized datasets for subsequent analysis.
+- Investigated relationships between datasets.
 
 **Implementation:** `src/data_loader.py`
 
-### Phase 2 — SQL Business Analysis
+### Phase 02 — SQL Business Analysis
 
-Created an in-memory SQLite database and loaded the relational datasets for business-oriented querying.
+Created an in-memory SQLite database and performed nine business-oriented SQL analyses.
 
-The SQL analysis addresses nine areas:
-
-| Analysis | Business Purpose |
-|---|---|
-| Monthly Revenue | Understand revenue performance over time |
-| Top Product Categories | Identify major revenue contributors |
-| State-Wise Performance | Compare customer and revenue distribution |
-| Delivery Time by State | Evaluate regional delivery efficiency |
-| Late Delivery vs Reviews | Understand delivery and satisfaction relationships |
-| Payment Analysis | Examine payment methods and installment behavior |
-| Customer Ordering Patterns | Identify purchasing days and hours |
-| Seller Revenue Ranking | Evaluate seller contribution |
-| Review Score by Category | Compare customer satisfaction across categories |
+| No. | SQL Analysis | Business Purpose |
+|---|---|---|
+| 01 | Monthly Revenue Analysis | Evaluate revenue trends |
+| 02 | Top Product Categories | Identify major revenue contributors |
+| 03 | State-Wise Customer and Revenue | Compare geographic performance |
+| 04 | Average Delivery Time by State | Evaluate delivery efficiency |
+| 05 | Late Delivery vs Customer Reviews | Investigate customer satisfaction |
+| 06 | Payment Methods and Installments | Understand payment behaviour |
+| 07 | Customer Ordering Patterns | Identify purchasing days and hours |
+| 08 | Review Score by Product Category | Compare category-level satisfaction |
+| 09 | Seller Revenue Ranking | Identify top-performing sellers |
 
 **SQL concepts applied:**
 
@@ -133,86 +139,76 @@ The SQL analysis addresses nine areas:
 
 **Implementation:** `sql/queries.sql`
 
-### Phase 3 — Data Cleaning and Feature Engineering
+### Phase 03 — Data Cleaning & Feature Engineering
 
 Prepared the data for reliable analysis and visualization.
 
-Key activities:
+**Key activities:**
+- Missing-value inspection and treatment.
+- Duplicate record checks.
+- Data type preparation.
+- Product category translation.
+- Date and time feature extraction.
+- Creation of analytical variables.
 
-- Inspected and handled missing values.
-- Checked duplicate records.
-- Prepared date and time columns.
-- Translated product categories into English.
-- Created additional analytical features.
+**Six engineered features:**
 
-**Engineered features:**
-
-| Feature | Business Meaning |
+| Feature | Description |
 |---|---|
-| `delivery_days` | Time taken to deliver an order |
-| `is_late` | Identifies whether an order was delivered late |
-| `order_month` | Purchase month for trend analysis |
-| `order_weekday` | Day of the week an order was placed |
-| `order_hour` | Hour of purchase |
-| `total_order_value` | Order value for transactional analysis |
+| `delivery_days` | Actual delivery duration |
+| `is_late` | Late delivery indicator |
+| `order_month` | Purchase month |
+| `order_weekday` | Day of the week |
+| `order_hour` | Purchase hour |
+| `total_order_value` | Total order value |
 
-The resulting analysis-ready dataset was exported as `olist_clean.csv`.
+The cleaned analytical dataset was exported as `olist_clean.csv`.
 
-### Phase 4 — Exploratory Data Analysis
+### Phase 04 — Exploratory Data Analysis
 
-Conducted exploratory analysis to identify patterns, distributions, relationships, and business trends.
+Conducted exploratory analysis using ten visualizations to investigate marketplace performance.
 
-The analysis includes ten visualizations:
+**Analysis areas:**
 
-1. Monthly Revenue Trends
-2. Top Product Categories by Revenue
-3. Customer Distribution by State
-4. Delivery Time Distribution
-5. Customer Review Score Distribution
-6. Late Delivery vs Customer Reviews
-7. Order Activity by Weekday and Hour
-8. Payment Method Distribution
-9. Product Price vs Freight Value
-10. Numerical Feature Correlation Heatmap
+- Monthly revenue trends
+- Product category performance
+- Geographic sales distribution
+- Customer purchasing patterns
+- Payment method distribution
+- Delivery time distribution
+- Customer review scores
+- Late delivery impact
+- Product pricing and freight
+- Numerical feature relationships
 
-The visualizations help investigate marketplace performance from commercial, operational, and customer perspectives.
+### Phase 05 — Customer Segmentation: RFM & K-Means
 
-### Phase 5 — Customer Segmentation Using RFM and K-Means
+Applied Recency, Frequency, and Monetary analysis to understand customer value and purchasing behaviour.
 
-Applied RFM analysis to understand customer purchasing behavior and identify customer groups with different business value characteristics.
-
-**RFM methodology:**
-
-| Metric | Definition |
-|---|---|
-| Recency | How recently a customer made a purchase |
-| Frequency | How many purchases a customer made |
-| Monetary | How much a customer spent |
-
-**Machine learning workflow:**
+**Methodology:**
 
 1. Calculated customer-level RFM metrics.
-2. Standardized the features using `StandardScaler`.
+2. Standardized features using `StandardScaler`.
 3. Evaluated cluster selection using the Elbow Method.
 4. Applied K-Means clustering with five clusters.
-5. Examined cluster characteristics.
-6. Developed segment-specific marketing recommendations.
+5. Analysed cluster characteristics.
+6. Developed segment-specific marketing strategies.
 
-**Customer segments identified:**
+**Identified customer segments:**
 
-- High-Value Customers
-- Recent Low-Spend Customers
-- Premium High-Spend Customers
-- At-Risk Customers
-- Lost Customers
+| Segment | Business Interpretation |
+|---|---|
+| High-Value Customers | Customers with strong monetary value and relatively recent purchases |
+| Recent Low-Spend Customers | Recently active customers with lower spending |
+| Premium High-Spend Customers | Customers with high monetary contribution |
+| At-Risk Customers | Customers with relatively low recent activity |
+| Lost Customers | Customers with long periods since their last purchase |
 
-The segmentation provides a framework for targeted marketing, customer engagement, and retention strategies.
+The segmentation provides a foundation for differentiated customer engagement and retention strategies.
 
-### Phase 6 — Executive Business Intelligence Dashboard
+### Phase 06 — Executive Business Intelligence Dashboard
 
-Developed a dark-themed, interactive executive dashboard using Plotly.
-
-The dashboard consolidates key marketplace performance indicators and business visualizations into a single analytical interface.
+Developed an interactive executive dashboard using Plotly with a dark, glassmorphism-inspired visual design.
 
 **Key Performance Indicators**
 
@@ -226,85 +222,92 @@ The dashboard consolidates key marketplace performance indicators and business v
 
 **Dashboard visualizations:**
 
-- Monthly Revenue Trend
-- Top 10 Product Categories by Revenue
-- Top Brazilian States by Orders
-- Customer Satisfaction: On-Time vs Late Delivery
-- Payment Method Distribution
-- Customer Segmentation Analysis
+1. Monthly Revenue Trends
+2. Top Product Categories by Revenue
+3. State-Wise Order Distribution
+4. Delivery Performance vs Customer Reviews
+5. Payment Method Distribution
+6. Customer Segmentation Analysis
 
-### Dashboard Preview
+#### Executive Dashboard Preview
 
-![Olist Executive Intelligence Dashboard](images/executive_dashboard.png)
+<div align="center">
 
-**[Open the Interactive Executive Dashboard](dashboard/dashboard.html)**
+<img src="images/executive_dashboard.png" alt="Olist E-Commerce Executive Dashboard" width="100%" />
 
-The HTML dashboard can be downloaded and opened in a modern web browser to explore its interactive visualizations.
+**Interactive Executive Dashboard**
 
-### Phase 7 — Business Insights and Recommendations
+[Open Dashboard](dashboard/dashboard.html)
 
-Translated analytical findings into business-oriented insights and recommendations.
+</div>
 
-The final analysis focuses on revenue performance, purchasing behavior, payment preferences, customer satisfaction, seller contribution, and customer segmentation.
+### Phase 07 — Business Insights & Recommendations
 
-## 06 | Key Business Findings
+Translated analytical findings into business-oriented insights and strategic recommendations.
 
-The analysis produced the following findings:
+## 📊 06. Key Business Findings
 
 ### Marketplace Performance
 
-- Total analyzed revenue: **R$15.84 million**
-- Total orders: **99,441**
-- Average order value: **R$160.58**
-- Average customer review score: **4.09 / 5**
+| Business Metric | Finding |
+|---|---:|
+| Total Revenue | R$15.84 Million |
+| Total Orders | 99,441 |
+| Average Order Value | R$160.58 |
+| Average Review Score | 4.09 / 5 |
 
-### Customer Experience and Delivery
+### Customer Experience & Delivery
 
-A significant relationship was observed between delivery performance and customer satisfaction.
+Delivery performance showed a meaningful relationship with customer satisfaction.
 
 | Delivery Status | Average Review Score |
 |---|---:|
 | On-Time Delivery | 4.29 |
 | Late Delivery | 2.57 |
 
-Late deliveries were associated with substantially lower customer review scores, highlighting the importance of reliable fulfillment operations.
+Late deliveries were associated with considerably lower customer review scores, highlighting the importance of reliable fulfillment operations.
 
-### Payment Behavior
+### Payment Behaviour
 
-Credit cards represented approximately **78.3%** of payment transactions, followed by boleto payments at approximately **17.9%**.
+| Payment Method | Share |
+|---|---:|
+| Credit Card | 78.3% |
+| Boleto | 17.9% |
+| Voucher | 2.3% |
+| Debit Card | 1.4% |
 
-### Purchasing Patterns
+Credit cards represented the dominant payment method in the analysed marketplace.
+
+### Customer Purchasing Behaviour
 
 - Monday recorded 16,196 orders.
 - 16:00 was the busiest ordering hour, with 6,675 orders.
 
-These patterns can inform campaign scheduling and operational planning.
+These findings can support promotional scheduling and operational planning.
 
-## 07 | Strategic Business Recommendations
+## 💡 07. Strategic Business Recommendations
 
-Based on the analytical findings, the following actions are recommended:
+**01. Improve Delivery Reliability**
 
-**1. Improve Delivery Reliability**
+Monitor delayed shipments, identify regional operational bottlenecks, and improve fulfillment coordination to protect customer satisfaction.
 
-Monitor late deliveries, identify regional bottlenecks, and improve fulfillment coordination to protect customer satisfaction.
+**02. Strengthen Customer Retention**
 
-**2. Strengthen Customer Retention**
+Use RFM-based segments to design targeted engagement, reactivation, and retention campaigns.
 
-Use RFM-based customer segments to design targeted engagement, reactivation, and retention campaigns.
+**03. Optimize Marketing Campaign Timing**
 
-**3. Optimize Marketing Timing**
+Align promotional activities with observed weekday and hourly purchasing patterns.
 
-Align promotional campaigns with observed weekday and hourly purchasing patterns.
-
-**4. Improve Product and Seller Strategy**
+**04. Improve Product and Seller Strategy**
 
 Monitor category-level revenue and seller contribution to identify growth opportunities and areas requiring operational attention.
 
-**5. Optimize the Payment Experience**
+**05. Optimize the Payment Experience**
 
 Use payment preference insights to improve checkout convenience and support customer purchasing decisions.
 
-## 08 | Repository Structure
+## 🗂️ 08. Repository Structure
 
 ```text
 olist-ecommerce-analytics/
@@ -312,17 +315,13 @@ olist-ecommerce-analytics/
 ├── dashboard/
 │   └── dashboard.html
 │
-├── data/
-│   ├── raw/
-│   └── processed/
-│
 ├── images/
 │   └── executive_dashboard.png
 │
 ├── notebooks/
-│   └── Olist_E_commerce_Analytics.ipynb
-│
-├── reports/
+│   ├── 01_data_understanding.ipynb
+│   ├── Olist_E_commerce_Analytics.ipynb
+│   └── README.md
 │
 ├── sql/
 │   └── queries.sql
@@ -336,27 +335,29 @@ olist-ecommerce-analytics/
 └── README.md
 ```
 
-## 09 | Installation and Execution
+*Raw and processed datasets are excluded from version control. The data directory is created locally when preparing the project environment.*
 
-### 1. Clone the repository
+## 🚀 09. Installation & Execution
+
+### Step 01 — Clone the Repository
 
 ```bash
 git clone https://github.com/moubani-dev/olist-ecommerce-analytics.git
 ```
 
-### 2. Navigate to the project directory
+### Step 02 — Navigate to the Project
 
 ```bash
 cd olist-ecommerce-analytics
 ```
 
-### 3. Create a virtual environment
+### Step 03 — Create a Virtual Environment
 
 ```bash
 python -m venv .venv
 ```
 
-### 4. Activate the environment
+### Step 04 — Activate the Environment
 
 **macOS / Linux**
 
@@ -370,29 +371,29 @@ source .venv/bin/activate
 .venv\Scripts\activate
 ```
 
-### 5. Install dependencies
+### Step 05 — Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 6. Download and prepare the dataset
+### Step 06 — Download the Dataset
 
 Download the [Olist Brazilian E-Commerce Dataset](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce).
 
-Place the required CSV files in the project's expected raw data directory.
+Place the required CSV files inside the expected raw data directory.
 
-Do not upload the raw datasets to GitHub.
+Do not upload the raw dataset files to GitHub.
 
-### 7. Run the analysis
+### Step 07 — Run the Analysis
 
-Open the notebook:
+Open the main notebook:
 
 `notebooks/Olist_E_commerce_Analytics.ipynb`
 
 Run the notebook cells sequentially in Google Colab or a compatible Jupyter environment.
 
-### 8. Explore the dashboard
+### Step 08 — Explore the Dashboard
 
 Open:
 
@@ -400,54 +401,67 @@ Open:
 
 in a modern web browser.
 
-## 10 | Project Deliverables
+## 📦 10. Project Deliverables
 
 | Deliverable | Location |
 |---|---|
-| Main Analysis Notebook | `notebooks/` |
+| Main Analytical Notebook | `notebooks/` |
 | Reusable DataLoader | `src/data_loader.py` |
-| SQL Business Queries | `sql/queries.sql` |
+| Nine SQL Business Queries | `sql/queries.sql` |
 | Executive Dashboard | `dashboard/dashboard.html` |
 | Dashboard Preview | `images/executive_dashboard.png` |
 | Project Documentation | `README.md` |
 | Python Dependencies | `requirements.txt` |
 
-## 11 | Key Learning Outcomes
+## 📚 11. Key Learning Outcomes
 
 This project provided practical experience in:
 
 - Object-oriented Python programming.
 - Data acquisition and validation.
 - Data cleaning and feature engineering.
-- Relational database design and SQL querying.
+- Relational database querying.
+- Advanced SQL business analysis.
 - Exploratory data analysis.
 - Statistical data visualization.
-- Customer segmentation using RFM.
+- RFM customer analytics.
 - K-Means clustering and feature scaling.
-- Interactive business intelligence dashboard development.
-- Business insight generation and analytical storytelling.
+- Interactive dashboard development.
+- Business insight generation.
+- Analytical storytelling.
 - Git and GitHub project management.
 
-## 12 | Author
+## 👩‍💻 12. Author
 
-**Moubani Das**
+<div align="center">
 
-Aspiring Data Analyst | Python | SQL | Business Intelligence
+### Moubani Das
 
-- **GitHub:** [moubani-dev](https://github.com/moubani-dev)
-- **LinkedIn:** [Connect with me](https://www.linkedin.com/in/developer-moubani/)
-- **Project Repository:** [Olist E-Commerce Analytics](https://github.com/moubani-dev/olist-ecommerce-analytics)
+**Aspiring Data Analyst | Python | SQL | Business Intelligence**
+
+Turning data into insights and insights into informed decisions.
+
+<br/>
+
+<a href="https://github.com/moubani-dev">
+  <img src="https://img.shields.io/badge/GitHub-moubani--dev-181717?style=for-the-badge&logo=github&logoColor=white" />
+</a>
+<a href="https://www.linkedin.com/in/developer-moubani/">
+  <img src="https://img.shields.io/badge/LinkedIn-Connect%20with%20me-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
+</a>
+
+<br/>
+
+**Project Repository:** [Olist E-Commerce Analytics](https://github.com/moubani-dev/olist-ecommerce-analytics)
+
+</div>
 
 ---
 
-<p align="center">
-  **Let's connect and explore the world of data!**
-</p>
+<div align="center">
 
----
+### FROM DATA TO INSIGHTS. FROM INSIGHTS TO DECISIONS.
 
-<p align="center">
-  <strong>From Data to Insights. From Insights to Decisions.</strong>
-  <br/>
-  <sub>Olist E-Commerce Analytics | Python • SQL • Business Intelligence</sub>
-</p>
+*Olist E-Commerce Analytics | Python • SQL • Data Analytics • Business Intelligence*
+
+</div>
